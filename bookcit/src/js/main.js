@@ -5,17 +5,15 @@ require.config({
         jquery: './libs/jquery',
         handle: './libs/handlebars.min',
         page: './libs/page',
-        base64: './libs/jquerybase64',
-        //页面
+        base64: './libs/jquerybase64',  //页面 
         apindex: './app/index',
         bookcity: './app/bookcity', //书城
         bookshelf: './app/bookshelf', //书架 
         detail: './app/detail', //详情页
         read: './app/read', //章节
         menu: './app/menu', //目录
-        search: './app/search', //搜索
-        //路由接口
-        te: './route/index',
+        search: './app/search', //搜索 
+        te: './route/index', //路由接口
         apphome: './app/home',
         //公用方法
         table: './common/tab',
