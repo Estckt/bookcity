@@ -1,0 +1,32 @@
+<dl>
+    <dt><img src="{{cover}}" alt=""></dt>
+    <dd>
+        <h2>{{title}}</h2>
+        <h3>{{authors}}</h3>
+        <h4>
+            <div class="grade grade8"></div>{{rights_id}}个评价
+        </h4>
+        <h5>价格：{{price}}书币/千字</h5>
+        <h6>字数：{{#word word_count}}{{/word}}/万字<span>{{#if finish}}连载中{{else}}已完结{{/if}}</span></h6>
+    </dd>
+</dl>
+<section class="section">
+    <ul>
+        <li><a href="/page/read/{{fiction_id}}">开始阅读</a></li>
+        <li>下载</li>
+    </ul>
+    <p>
+        {{content}}
+    </p>
+    <h3 class="late">
+        最新:更新{{latest}}&nbsp;&nbsp;更新与两小时前
+    </h3>
+</section>
+<section class="lei">
+    <h3>类别标签</h3>
+    <ul>
+        {{#each categories}}
+        <li>{{label}}</li>
+        {{/each}}
+    </ul>
+</section>
